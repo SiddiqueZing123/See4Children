@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context="com.zingbytes.see4children.activity.activity.MainActivity"
+tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent">
+
+        <AutoCompleteTextView
+            android:visibility="gone"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10sp"
+            android:drawablePadding="20dp"
+            android:textSize="13sp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:id="@+id/autocompletetextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="Search"
+            android:inputType="text"
+            android:padding="3dp"
+            android:ems="10"/>
+        <requestFocus/>
+
+        <FrameLayout
+            android:layout_below="@id/autocompletetextview"
+            android:id="@+id/content_frame"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+       </FrameLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
